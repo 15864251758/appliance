@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="js/hl.js"></script>
+</head>
+<body>
+<div class="slideTxtBox login-re">
+	<div class="hd clearfix">
+		<ul><li>登陆</li><li>注册</li></ul>
+	</div>
+	<div class="bd">
+		<ul class="login">
+				<form action="">
+					<input class="login-user" type="text" placeholder="手机/邮箱/登陆账号">
+					<input class="login-pass" type="password" placeholder="请输入密码(8-12位，区分大小写)">
+					<input class="check" type="checkbox" name="vehicle" value="Car"><i>下次自动登陆</i>
+					<span><a href="">忘记密码？</a></span>
+					<input class="btn" type="submit" value="登陆">
+				</form>
+		</ul>
+		<ul>
+				<form action="">
+					<input class="login-user" type="text" placeholder="手机/邮箱/登陆账号">
+					<input class="login-pass" type="password" placeholder="请输入密码(8-12位，区分大小写)">
+					<input class="login-pass" type="password" placeholder="请确认密码">
+					<input class="check" type="checkbox" name="vehicle" value="Car"><i>自动登陆</i>
+					<span><a href="">直接登陆 ></a></span>
+					<input class="btn" type="submit" value="注册">
+				</form>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+	jQuery(".slideTxtBox").slide();
+
+	$('.login-re li').hover(function(){
+		$(this).addClass("on");
+	});
+
+</script>
+</body>
+</html>
