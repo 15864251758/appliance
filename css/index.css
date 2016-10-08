@@ -1,0 +1,629 @@
+/*导航条*/
+.top-nav{
+	height: 100px;
+}
+.logo{
+	width: 200px;
+	margin-top: 24px;
+	float: left;
+}
+.nav{ line-height:34px; position:relative; z-index:1;height: 100%;width: 800px;float: right;color: #666;font-size: 16px;}
+.nav .nLi {
+    float: left;
+    position: relative;
+    display: inline;
+    height: 100px;
+    line-height: 100px;
+}
+.nav .nLi h3 a {
+    padding: 9px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.nav .sub{ display:none; width:100px; left:0; top:70px;  position:absolute; 
+	background:#FF6637;  line-height:26px; padding:5px 0; 
+	text-align:center;
+	color: #fff;
+	width: 100%; 
+}
+.nav .sub li{ zoom:1; line-height: 40px;}
+.nav .sub a{ display:block; padding:0 10px; }
+.nav .sub a:hover{ background:#FF6637; color:#fff;  }
+.nav .on h3 a{ background:#FF6637; color:#fff;   }
+/*banner*/
+/* 本例子css */
+.slideBox{ overflow:hidden; position:relative;}
+.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+.slideBox .hd ul li.on{ background:#f00; color:#fff; }
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+.slideBox .bd img{display:block;width: 100%;min-height: 540px;}
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+
+.slideBox .next{
+	position: absolute;
+	right: 3%;
+	top: 50%;
+	margin-top: -25px;
+	display: block;
+	background:url("../images/next.png") no-repeat rgba(0,0,0,0.2);
+	border-radius: 6px;
+	width: 70px;
+	height: 70px;
+}
+.slideBox .prev{
+
+	position: absolute;
+	left: 3%;
+	top: 50%;
+	margin-top: -25px;
+	display: block;
+	background:url("../images/prev.png") no-repeat rgba(0,0,0,0.2);
+	border-radius: 6px;
+	width: 70px;
+	height: 70px;
+
+}
+.slideBox .prev:hover,
+.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+.slideBox .prevStop{ display:none;  }
+.slideBox .nextStop{ display:none;  }
+/*banner结束*/
+/*分类*/
+.cart{
+	background:#FF8236;
+	border-bottom: 1px solid #FF8236;
+	position: relative;
+}
+.cart-content li{
+	float: left;
+	width: 240px;
+	text-align: center;
+	padding: 30px 0;
+	font-size: 14px;
+	color: #666;
+	background: #fff;
+
+}
+.cart-content .cart-on{
+	background: #FF8236;
+	color: #fff !important;
+}
+/*分类结束*/
+/*简介开始*/
+.intro{
+	height: 788px;
+	background: url(../images/bg.jpg);
+	background-position: 50% 50%;
+	font-weight: 400;
+}
+.intro .intro-left{
+	margin-top: 50px;
+	line-height: 1.8;
+	float: left;
+}
+.main-title{
+	margin-bottom: 50px;
+}
+.main-title h3{
+	font-family: Arial;
+	font-size: 30px;
+	color: #CCC;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.main-title h4 {
+    font-size: 24px;
+    color: #2B2B2B;
+    font-weight: 400;
+    display: inline-block;
+    height: 60px;
+    border-bottom: 1px solid #FF8236;
+    padding-right: 80px;
+}
+.main-title h6{
+	font-family: Arial;
+	color: #CCC;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 20px 0;
+}
+.main-title img{
+	margin-top: 40px;
+}
+.main-title p{
+	color: #666;
+	font-size: 14px;
+	line-height: 30px;
+}
+.intro .intro-right {
+    float: right;
+    line-height: 1.8;
+    margin-top: 100px;
+    width: 320px;
+    margin-right: 100px;
+}
+.main-title2 h3{
+	font-family: Arial;
+	font-size: 30px;
+	color: #CCC;
+	font-weight: 400;
+}
+.main-title2 h4 {
+    font-size: 24px;
+    color: #2B2B2B;
+    font-weight: 400;
+    display: inline-block;
+    height: 40px;
+}
+.main-title2 h6{
+	font-family: Arial;
+	color: #CCC;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 20px 0 40px;
+}
+.main-title2 img{
+	margin-top: 40px;
+}
+.main-title2 p{
+	color: #888;
+	font-size: 12px;
+	line-height: 26px;
+	margin: 20px 0;
+}
+.intro-right-more img{
+	margin-top:10px; 
+}
+/*简介结束*/
+.big-title{
+	width: 100%;
+	height: 250px;
+	background: url(../images/middle.jpg);
+	text-align: center;
+	line-height: 2;
+	padding-top: 70px;
+}
+.big-title h1{
+	font-size: 48px;
+	color: #FFF;
+}
+.big-title p{
+	font-size: 18px;
+	color: #FCE2D6;
+	font-family: Arial;
+}
+/*产品中心*/
+.main-top{
+	padding-top: 80px;
+}
+.margin-bottom{
+	padding-bottom: 80px;
+}
+.product-main{
+	overflow: hidden;
+	width: 1240px;
+}
+.product-main a:hover{
+	color: #FF8236;
+}
+.product-main-con{
+	width: 220px;
+	float: left;
+	margin-right: 25px;
+	text-align: center;
+	color: #666;
+	line-height: 24px;
+}
+.product-main-con img{
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.example{
+	overflow: hidden;
+}
+.example-main{
+	width: 1230px;
+}
+.example-small{
+	width: 270px;
+	height: 355px;
+	float: left;
+	margin:0 14px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.example-small img{
+	width: 102%;
+}
+.example-big img{
+	width: 102%;
+}
+.example-small img:hover{
+
+}
+.example-img{
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+}
+.example-big{
+	width: 568px;
+	height: 355px;
+	float: left;
+	margin:0 14px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+}
+/*美食*/
+.food{
+}
+.food .food-con{
+	width: 280px;
+	float: left;
+	margin-right: 26px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+/*foot*/
+.link{
+	background: url(../images/linkbg.jpg);
+	height: 432px;
+	width: 100%;
+	color: #fff;
+	padding-top: 60px;
+	position: relative;
+}
+.link .coo-title{
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin-bottom: 6px;
+}
+.link .link-left{
+	width: 680px;
+	float: left;
+}
+.link .coo-content{
+	float: left;
+	width: 340px;
+	margin: 10px 0 20px;
+	font-size: 14px;
+	line-height: 24px;
+	position: relative;
+}
+.link .coo-content img{
+	float: left;
+	margin-right: 10px;
+}
+.link .coo-content .coo-txt{
+	float: left;
+	
+}
+.link .coo-content .coo-txt span{
+	position: absolute;
+	bottom: 0;
+	padding-top: 10px;
+	border-top: 1px solid #fff;
+}
+.link .link-right{
+	width: 500px;
+	float: left;
+}
+.link .link-right .link-right-con{
+	margin-top: 30px;
+	position: relative;
+}
+.link .link-right span{
+	display: inline-block;
+	margin: 8px 0;
+}
+.link .link-right span img{
+	vertical-align: middle;
+}
+.link .copy{
+	position: absolute;
+	bottom: 30px;
+	text-align: center;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+/*产品中心页面*/
+.pro-banner{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.pro-banner>img{
+	width: 100%;
+	min-height: 400px;
+}
+.pro-content{
+	border-top: 1px solid #eee;
+}
+.pro-content:nth-child(odd) .pro-img{
+	float: right;
+}
+.pro-content .pro-img{
+	float: left;
+}
+.pro-content .pro-txt{
+	float: left;
+	padding: 60px 0 0 0;
+	width:540px;
+}
+.pro-content .pro-txt h1{
+	font-size: 36px;
+	font-weight: normal;
+	color: #333333;
+}
+.pro-content .pro-txt h3{
+	font-family: Arial;
+	font-size: 18px;
+	color: #999999;
+	font-weight: normal;
+	margin: 20px 0;
+}
+.pro-content .pro-txt p{
+	font-size: 14px;
+	color: #3E3E3E;
+}
+/*嵌入式知识*/
+.pro-banner-main{
+	position: absolute;
+	top: 50px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.pro-banner-main h3{
+	font-size:28px; 
+	margin: 20px 0 6px;
+	font-weight: normal;
+}
+.pro-banner-main p{
+	color: #444;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.pro-banner-main span{
+	color: #FF6637;
+	display: inline-block;
+	font-size: 18px;
+}
+/*售后*/
+.service{
+	padding: 50px 0;
+	text-align: center;
+	font-size: 16px;
+	color: #666666;
+}
+.service-title h1{
+	color: #ff8437;
+	font-size: 50px;
+	font-family: Arial;
+	font-weight: normal;
+}
+.service-title h2{
+	color: #323232;
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 100px;
+}
+.service-main{
+	margin: 50px 0;
+}
+.service-main .service-con{
+	float: left;
+	width: 33.33%;
+	padding: 30px 30px;
+	margin-bottom: 50px;
+}
+.service-main .service-con h3{
+	font-size: 24px;
+	color: #333;
+	font-weight: normal;
+	line-height: 40px;
+	margin-bottom: 40px;
+}
+.service-main .service-con p{
+	line-height: 26px;
+}
+/*文章页*/
+.article-content{
+	width: 1200px;
+	margin: 20px auto 120px;
+	border: 1px solid #eee;
+	box-shadow: 5px 5px 10px #efefef;
+	padding: 20px 40px 60px;
+	position: relative;
+}
+.article-content .title,.article-content .author{
+	text-align: center;
+	display: block;
+}
+.article-content .title{
+	color: #323232;
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 60px;
+}
+.article-content .time{
+	position: absolute;
+	bottom: 40px;
+	right: 60px;
+	font-size: 12px;
+	color: #888;
+}
+.article-content .article-img{
+	padding: 20px 0;
+}
+.article-content .article-img img{
+	width: 100%;
+	margin: 20px auto;
+}
+.article-content p{
+	color: #333;
+	font-size: 16px;
+	line-height: 28px;
+	margin-bottom: 20px;
+	text-indent: 34px;
+}
+/*留言板*/
+.article{
+	margin-bottom: 40px;
+}
+.sideMen{ width:1200px; margin: 60px auto 100px !important;}
+.sideMen h3{ height:50px; line-height:32px; padding-left:0px;  border-top:1px solid #e3e3e3; 
+		font-size: 18px;line-height: 50px;font-weight: normal;cursor: pointer;
+}
+.sideMen h3 em:hover{
+	color: #FF6637;
+}
+.sideMen h3:hover{
+	border-top:1px solid #FF6637;
+	border-bottom:1px solid #FF6637;
+}
+.sideMen h3 em{ float:right; display:block; width:40px; height:32px;font-size: 14px; cursor:pointer;font-style: normal; }
+.sideMen h3 em.on{ background-position:16px -57px; }
+.sideMen ul{ padding:8px 0px; color:#555;font-size: 14px;  }
+.sideMen p{
+	line-height: 24px;
+	margin: 10px;
+}
+.article .talk{
+	display: block;
+	border: 1px solid #FF8236;
+	height: 200px;
+	width: 100%;
+	padding:10px 20px;
+	font-size: 14px;
+}
+.talk-btn{
+	padding: 10px 20px;
+	margin: 20px auto;
+	width: 160px;
+	border: none;
+	background: #FF8236;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	text-align: center;
+}
+/*map*/
+.map{
+	width: 100%;
+	height: 800px;
+	margin-bottom: 30px;
+}
+.foot-map{
+	width: 560px;
+	height: 560px;
+	position: absolute;
+	bottom: 160px;
+	right: 180px;
+	display: none;
+	background: rgba(255,255,255,0.6);
+	border-radius: 50%;
+	border: 1px solid #FF8236;
+}
+.foot-map #allmap{
+	width: 94%;
+	height: 94%;
+	margin: 3% auto;
+	border-radius: 50%;
+}
+/*login*/
+.login-re{
+	width: 500px;
+	margin: 0 auto;
+}
+		.slideTxtBox{ width:500px; text-align:left; margin-top: 60px; border: 1px solid #eee; padding:0 30px 30px;}
+		.slideTxtBox .hd{ height:30px; line-height:30px;position:relative; }
+		.slideTxtBox .hd ul{ float:left;margin: 30px 0 0; display: block;}
+		.slideTxtBox .hd ul li{ float:left; padding:4px 20px; cursor:pointer; font-size: 20px;}
+		.slideTxtBox .hd ul li.on{ border-bottom: 2px solid  #FF6637;}
+		.slideTxtBox .bd { margin-top: 30px; }
+		.slideTxtBox .bd ul{ padding:20px 0px;  zoom:1;  }
+		.slideTxtBox .bd li{ height:24px; line-height:24px;   }
+		.slideTxtBox .bd li .date{ float:right; color:#999;  }
+
+		/* 下面是前/后按钮代码，如果不需要删除即可 */
+		.slideTxtBox .arrow{  position:absolute; right:10px; top:0; }
+		.slideTxtBox .arrow a{ display:block;  width:5px; height:9px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden;
+			 cursor:pointer;}
+		.slideTxtBox .arrow .next{ background-position:0 -50px;  }
+		.slideTxtBox .arrow .prevStop{ background-position:-60px 0; }
+		.slideTxtBox .arrow .nextStop{ background-position:-60px -50px; }
+.login-re form{
+	position: relative;
+}
+.login-re input{
+	display: block;
+	padding: 0 10px;
+}
+.login-re .check{
+	display: inline;
+	font-size: 14px;
+}
+.login-re .btn{
+	width: 100%;
+	height: 54px;
+	background: #FF6637;
+	color: #fff;
+	line-height: 54px;
+	font-size: 22px;
+	border: none;
+	cursor: pointer;
+	margin: 40px 0;
+}
+.login-re .btn:hover{
+	border: 1px solid #FF6637;
+	background: #fff;
+	color: #FF6637;
+}
+.login-re span{
+	position: absolute;
+	right: 0px;
+	font-size: 14px;
+}
+.login-re i{
+	font-size: 14px;
+	margin-left: 6px;
+	font-style: normal;
+}
+.login-user,.login-pass{
+	height: 30px;
+	margin: 20px 0;
+	width: 100%;
+	height: 46px;
+	font-size: 16px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+}
+/*合作品牌*/
+.cooprate{
+	margin: 60px auto;
+	padding: 0 50px;
+	overflow: hidden;
+}
+.coo-content{
+	width: 1220px;
+}
+.coo-img{
+	width: 200px;
+	height: 120px;
+	float: left;
+	margin: 20px 25px 20px 0;
+}
+.coo-img img{
+	width: 100%;
+	height: 100%;
+}
